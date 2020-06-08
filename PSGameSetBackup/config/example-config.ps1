@@ -1,5 +1,5 @@
 $config = @{   
-    BackupStore = 'Join-Path $env:USERPROFILE "Google Drive\Game Backups"'
+    BackupStore = "$(Join-Path $env:USERPROFILE 'Google Drive\Game Backups')"
     Games = @{
         "Minecraft" = "$env:APPDATA\.minecraft"
         "Escape from Tarkov" = @(
